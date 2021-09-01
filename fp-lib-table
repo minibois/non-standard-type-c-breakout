@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Type-C)(type KiCad)(uri ${KIPRJMOD}/Libraries/Type-C.pretty)(options "")(descr ""))
+  (lib (name mini-general-tweaks)(type KiCad)(uri ${KIPRJMOD}/Libraries/mini-general-tweaks.pretty)(options "")(descr ""))
+)
