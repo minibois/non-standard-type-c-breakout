@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mini-type-c-breakout-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
@@ -71,7 +72,6 @@ F 3 "" H 1950 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1600 950  1600 850 
-Connection ~ 1600 850 
 $Comp
 L power:VCC #PWR0103
 U 1 1 6130057E
@@ -89,26 +89,8 @@ Text GLabel 1650 2100 2    50   Input ~ 0
 USB_D-
 Text GLabel 1650 2300 2    50   Input ~ 0
 USB_D+
-Connection ~ 1600 2100
-Connection ~ 1600 2300
-$Comp
-L mini_random_library:TYPE-C-31-M12_13_EDITED J0
-U 1 1 612F9EA6
-P 1000 2000
-F 0 "J0" H 1107 3417 50  0000 C CNN
-F 1 "TYPE-C-31-M12_13_EDITED" H 1107 3326 50  0000 C CNN
-F 2 "mini-general-tweaks:TYPE-C-31-M-12-No-SHIELD" V 500 2050 50  0001 C CNN
-F 3 "" H 1200 2050 50  0001 C CNN
-	1    1000 2000
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1600 3050
 NoConn ~ 1600 3150
-Wire Wire Line
-	900  3450 1000 3450
-Connection ~ 1000 3450
-Wire Wire Line
-	1000 3450 1100 3450
 $Comp
 L power:GND #PWR0104
 U 1 1 61302846
@@ -146,84 +128,10 @@ F 3 "" H 2850 850 50  0001 C CNN
 	1    2850 850 
 	1    0    0    -1  
 $EndComp
-$Comp
-L mini_random_library:ConnectionPoint J2
-U 1 1 61307277
-P 2950 1050
-F 0 "J2" H 3165 1097 50  0000 L CNN
-F 1 "ConnectionPoint" H 3165 1019 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 2950 950 50  0001 C CNN
-F 3 "" H 2950 950 50  0001 C CNN
-	1    2950 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L mini_random_library:ConnectionPoint J3
-U 1 1 6130DB4A
-P 2950 1250
-F 0 "J3" H 3178 1301 50  0000 L CNN
-F 1 "ConnectionPoint" H 3178 1210 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3250 1350 50  0001 C CNN
-F 3 "" H 3250 1350 50  0001 C CNN
-	1    2950 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L mini_random_library:ConnectionPoint J6
-U 1 1 6130E898
-P 2950 1850
-F 0 "J6" H 3178 1901 50  0000 L CNN
-F 1 "ConnectionPoint" H 3178 1810 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3250 1950 50  0001 C CNN
-F 3 "" H 3250 1950 50  0001 C CNN
-	1    2950 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L mini_random_library:ConnectionPoint J1
-U 1 1 6130F2E8
-P 2950 850
-F 0 "J1" H 3178 901 50  0000 L CNN
-F 1 "ConnectionPoint" H 3178 810 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3250 950 50  0001 C CNN
-F 3 "" H 3250 950 50  0001 C CNN
-	1    2950 850 
-	1    0    0    -1  
-$EndComp
-Text GLabel 1650 1550 3    50   Input ~ 0
-CC2
-Text GLabel 1650 1350 1    50   Input ~ 0
-CC1
 Wire Wire Line
 	1600 1550 1700 1550
 Wire Wire Line
 	1600 1350 1850 1350
-Text GLabel 2850 1450 0    50   Input ~ 0
-CC1
-Text GLabel 2850 1650 0    50   Input ~ 0
-CC2
-$Comp
-L mini_random_library:ConnectionPoint J4
-U 1 1 613173C0
-P 2950 1450
-F 0 "J4" H 3178 1501 50  0000 L CNN
-F 1 "ConnectionPoint" H 3178 1410 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3250 1550 50  0001 C CNN
-F 3 "" H 3250 1550 50  0001 C CNN
-	1    2950 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L mini_random_library:ConnectionPoint J5
-U 1 1 61318099
-P 2950 1650
-F 0 "J5" H 3178 1701 50  0000 L CNN
-F 1 "ConnectionPoint" H 3178 1610 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3250 1750 50  0001 C CNN
-F 3 "" H 3250 1750 50  0001 C CNN
-	1    2950 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2850 850  2950 850 
 Wire Wire Line
@@ -231,57 +139,68 @@ Wire Wire Line
 Wire Wire Line
 	2850 1250 2950 1250
 Wire Wire Line
-	2850 1450 2950 1450
-Wire Wire Line
-	2850 1650 2950 1650
-Wire Wire Line
 	2850 1850 2950 1850
 $Comp
-L power:GND #PWR0107
-U 1 1 61323410
-P 2850 2100
-F 0 "#PWR0107" H 2850 1850 50  0001 C CNN
-F 1 "GND" H 2855 1927 50  0000 C CNN
-F 2 "" H 2850 2100 50  0001 C CNN
-F 3 "" H 2850 2100 50  0001 C CNN
-	1    2850 2100
+L Connector_Generic:Conn_01x01 J1
+U 1 1 612FE259
+P 3150 850
+F 0 "J1" H 3230 892 50  0000 L CNN
+F 1 "Conn_01x01" H 3230 801 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3150 850 50  0001 C CNN
+F 3 "~" H 3150 850 50  0001 C CNN
+	1    3150 850 
 	1    0    0    -1  
 $EndComp
 $Comp
-L mini_random_library:ConnectionPoint J7
-U 1 1 61323416
-P 2950 2100
-F 0 "J7" H 3178 2151 50  0000 L CNN
-F 1 "ConnectionPoint" H 3178 2060 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3250 2200 50  0001 C CNN
-F 3 "" H 3250 2200 50  0001 C CNN
-	1    2950 2100
+L Connector_Generic:Conn_01x01 J2
+U 1 1 612FF83B
+P 3150 1050
+F 0 "J2" H 3230 1092 50  0000 L CNN
+F 1 "Conn_01x01" H 3230 1001 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3150 1050 50  0001 C CNN
+F 3 "~" H 3150 1050 50  0001 C CNN
+	1    3150 1050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 6130277F
+P 3150 1250
+F 0 "J3" H 3230 1292 50  0000 L CNN
+F 1 "Conn_01x01" H 3230 1201 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3150 1250 50  0001 C CNN
+F 3 "~" H 3150 1250 50  0001 C CNN
+	1    3150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J6
+U 1 1 61302F25
+P 3150 1850
+F 0 "J6" H 3230 1892 50  0000 L CNN
+F 1 "Conn_01x01" H 3230 1801 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3150 1850 50  0001 C CNN
+F 3 "~" H 3150 1850 50  0001 C CNN
+	1    3150 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 2300
+Connection ~ 1600 2100
+Connection ~ 1600 850 
 Wire Wire Line
-	2850 2100 2950 2100
-$Comp
-L power:GND #PWR0108
-U 1 1 613250BD
-P 2850 2350
-F 0 "#PWR0108" H 2850 2100 50  0001 C CNN
-F 1 "GND" H 2855 2177 50  0000 C CNN
-F 2 "" H 2850 2350 50  0001 C CNN
-F 3 "" H 2850 2350 50  0001 C CNN
-	1    2850 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L mini_random_library:ConnectionPoint J8
-U 1 1 613250C3
-P 2950 2350
-F 0 "J8" H 3178 2401 50  0000 L CNN
-F 1 "ConnectionPoint" H 3178 2310 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 3250 2450 50  0001 C CNN
-F 3 "" H 3250 2450 50  0001 C CNN
-	1    2950 2350
-	1    0    0    -1  
-$EndComp
+	1000 3450 1100 3450
 Wire Wire Line
-	2850 2350 2950 2350
+	900  3450 1000 3450
+Connection ~ 1000 3450
+$Comp
+L mini_random_library:TYPE-C-31-M12_13_EDITED J0
+U 1 1 612F9EA6
+P 1000 2000
+F 0 "J0" H 1107 3417 50  0000 C CNN
+F 1 "TYPE-C-31-M12_13_EDITED" H 1107 3326 50  0000 C CNN
+F 2 "mini-general-tweaks:HRO-TYPE-C-No-SHIELD" V 500 2050 50  0001 C CNN
+F 3 "" H 1200 2050 50  0001 C CNN
+	1    1000 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,19 @@
+(module 1mm-1x1-header-TWEAKED (layer F.Cu) (tedit 612FD24E)
+  (descr "Through hole angled pin header, 1x01, 1.00mm pitch, 2.0mm pin length, single row")
+  (tags "Through hole angled pin header THT 1x01 1.00mm single row")
+  (fp_text reference J5 (at 0 -1.04) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Conn_01x01 (at 0 0.57) (layer F.Fab) hide
+    (effects (font (size 0.1 0.1) (thickness 0.02)))
+  )
+  (fp_line (start -0.15 -0.15) (end 0.25 -0.15) (layer F.Fab) (width 0.1))
+  (fp_line (start -0.15 -0.15) (end -0.15 0.15) (layer F.Fab) (width 0.1))
+  (fp_line (start -0.15 0.15) (end 0.25 0.15) (layer F.Fab) (width 0.1))
+  (pad 1 thru_hole rect (at 0 0) (size 0.85 0.85) (drill 0.5) (layers *.Cu *.Mask))
+  (model ${KISYS3DMOD}/Connector_PinHeader_1.00mm.3dshapes/PinHeader_1x01_P1.00mm_Horizontal.wrl
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+)

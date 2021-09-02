@@ -1,4 +1,4 @@
-16899293817121913
+16902554920510279
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75481,6 +75481,13 @@ varistor SIOV
 2
 2
 mini-general-tweaks
+1mm-1x1-header-TWEAKED
+Through hole angled pin header, 1x01, 1.00mm pitch, 2.0mm pin length, single row
+Through hole angled pin header THT 1x01 1.00mm single row
+0
+1
+1
+mini-general-tweaks
 D_SOD123_axial-dual
 
 
@@ -75494,6 +75501,13 @@ HRO-TYPE-C-31-M-12-HandSoldering_tweaked
 0
 16
 13
+mini-general-tweaks
+HRO-TYPE-C-No-SHIELD
+
+
+0
+12
+12
 mini-general-tweaks
 ICSP_2.54mm_LAYOUT
 Through hole straight pin header, 2x03, 2.54mm pitch, double rows
