@@ -5,15 +5,17 @@ EELAYER END
 $Descr User 8268 5827
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Title "non standard type c breakout board"
+Date "2021-10-18"
+Rev "1"
+Comp "github.com/minibois/non-standard-type-c-breakout/blob/master/LICENSE/LICENSE.txt"
+Comment1 "of CERN_OHL-S v2 (https://ohwr.org/cern_ohl_s_v2.txt)"
+Comment2 "You may redistribute and modify this source and make products using it under the terms"
+Comment3 "This schematic describes Open Hardware and is licensed under the CERN-OHL-S v2."
+Comment4 "Copyright minibois 2021. "
 $EndDescr
+Text Notes 2200 2650 0    50   ~ 0
+https://github.com/minibois/non-standard-type-c-breakout/
 Wire Wire Line
 	1600 2650 1600 2550
 Wire Wire Line
@@ -262,6 +264,4 @@ Text Notes 2200 2570 0    57   ~ 11
 2021
 Text Notes 2200 2500 0    59   ~ 0
 rev.1
-Text Notes 2200 2650 0    50   ~ 0
-github.com/minibois/mini-non-standard-type-c-breakout
 $EndSCHEMATC
