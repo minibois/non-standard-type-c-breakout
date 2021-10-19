@@ -4,7 +4,7 @@
 ![CR2032Comparison](/Documents/Images/CR2032.jpeg)
 ![PCB](/Documents/Images/PCB.png)
 
- << [License](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/LICENSE/LICENSE.txt) || [Bill of Materials](https://github.com/minibois/eLiXiVy/blob/master/Documents/BOM.txt) || Schematic ([.pdf](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/Documents/Schematic.pdf)) / ([.sch](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/mini-type-c-breakout.sch)) || PCB ([.pdf](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/Documents/PCB.pdf)) / ([.kicad_pcb](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/mini-type-c-breakout.kicad_pcb)) >>
+ << [License](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/LICENSE/LICENSE.txt) || [Bill of Materials](https://github.com/minibois/non-standard-type-c-breakout/blob/master/Documents/BOM.txt) || Schematic ([.pdf](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/Documents/Schematic.pdf)) / ([.sch](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/mini-type-c-breakout.sch)) || PCB ([.pdf](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/Documents/PCB.pdf)) / ([.kicad_pcb](https://github.com/minibois/mini-non-standard-type-c-breakout/blob/master/mini-type-c-breakout.kicad_pcb)) >>
 
  This daughterboard allows for a USB 2.0 Type C by HRO receptacle to be installed on the opposite side of the Type C pins. This daughterboard was used in a keyboard repair project, so the receptacle could be installed on the keyboard cleanly.
 

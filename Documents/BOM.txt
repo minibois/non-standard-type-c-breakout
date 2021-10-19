@@ -1,4 +1,4 @@
-Qty		Product					Description				Schematic	Notes
-1		mini-eLiXiVy PCB		PCB						N/A			To be purchased from your preffered PCB manufacturer
+Qty		Product				Description			Schematic	Notes
+1		non-standard-type-c-breakout	PCB				N/A		To be purchased from your preffered PCB manufacturer
 2		ERJ-6RBD5101V			0805 5.1K Resistor		R0,R1
-1		TYPE-C-31-M-12			USB Type C				J0
+1		TYPE-C-31-M-12			USB Type C			J0
