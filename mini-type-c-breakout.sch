@@ -2,7 +2,7 @@ EESchema Schematic File Version 4
 LIBS:mini-type-c-breakout-cache
 EELAYER 30 0
 EELAYER END
-$Descr User 8268 5827
+$Descr User 5827 5827
 encoding utf-8
 Sheet 1 1
 Title "non standard type c breakout board"

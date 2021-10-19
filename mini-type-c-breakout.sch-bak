@@ -14,254 +14,254 @@ Comment2 "You may redistribute and modify this source and make products using it
 Comment3 "This schematic describes Open Hardware and is licensed under the CERN-OHL-S v2."
 Comment4 "Copyright minibois 2021. "
 $EndDescr
-Text Notes 3550 3850 0    59   ~ 0
-rev.1
-Text Notes 3550 3920 0    57   ~ 11
-2021
-$Comp
-L mini_random_library:MiniLogo #G?
-U 1 1 616F6A5E
-P 4250 3550
-F 0 "#G?" H 4250 3267 60  0001 C CNN
-F 1 "MiniLogo" H 4250 3833 60  0001 C CNN
-F 2 "" H 4250 3550 50  0001 C CNN
-F 3 "" H 4250 3550 50  0001 C CNN
-	1    4250 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO?
-U 1 1 616F5139
-P 4850 3750
-F 0 "#LOGO?" H 4850 4025 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 4850 3525 50  0001 C CNN
-F 2 "" H 4850 3750 50  0001 C CNN
-F 3 "~" H 4850 3750 50  0001 C CNN
-	1    4850 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L mini_random_library:OSHW-Text-Logo #G?
-U 1 1 616F35AF
-P 4300 3700
-F 0 "#G?" H 4300 3637 60  0001 C CNN
-F 1 "OSHW-Text-Logo" H 4300 3763 60  0001 C CNN
-F 2 "" H 4300 3700 39  0001 C CNN
-F 3 "" H 4300 3700 39  0001 C CNN
-	1    4300 3700
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	1850 2100 3500 2100
-Wire Notes Line
-	1850 1850 3500 1850
-Wire Notes Line
-	3500 5300 3500 1850
-Wire Notes Line
-	1850 5300 3500 5300
-Wire Notes Line
-	1850 1850 1850 5300
-Wire Notes Line
-	3550 2100 4850 2100
-Wire Notes Line
-	4850 1850 3550 1850
-Wire Notes Line
-	4850 3200 4850 1850
-Wire Notes Line
-	3550 3200 4850 3200
-Wire Notes Line
-	3550 1850 3550 3200
-Text Notes 3600 2050 0    87   ~ 17
-Connection Pads
-Connection ~ 2950 2450
+Text Notes 2200 2650 0    50   ~ 0
+https://github.com/minibois/non-standard-type-c-breakout/
 Wire Wire Line
-	2950 2450 3150 2450
+	1600 2650 1600 2550
 Wire Wire Line
-	2950 2950 3100 2950
-Text Notes 1900 2050 0    87   ~ 17
-USB Type C Receptacle
+	1600 2550 1650 2550
+Wire Wire Line
+	1600 2350 1600 2250
+Wire Wire Line
+	1600 2350 1650 2350
 $Comp
-L mini_random_library:TYPE-C-31-M12_13_EDITED J0
-U 1 1 612F9EA6
-P 2350 3600
-F 0 "J0" H 2457 5017 50  0000 C CNN
-F 1 "TYPE-C-31-M12_13_EDITED" H 2457 4926 50  0000 C CNN
-F 2 "mini-general-tweaks:HRO-TYPE-C-No-SHIELD" V 1850 3650 50  0001 C CNN
-F 3 "" H 2550 3650 50  0001 C CNN
-	1    2350 3600
-	1    0    0    -1  
-$EndComp
-Connection ~ 2350 5050
-Wire Wire Line
-	2250 5050 2350 5050
-Wire Wire Line
-	2350 5050 2450 5050
-Connection ~ 2950 3700
-Connection ~ 2950 3900
-$Comp
-L Connector_Generic:Conn_01x01 J6
-U 1 1 61302F25
-P 4250 2950
-F 0 "J6" H 4330 2992 50  0000 L CNN
-F 1 "Conn_01x01" H 4330 2901 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4250 2950 50  0001 C CNN
-F 3 "~" H 4250 2950 50  0001 C CNN
-	1    4250 2950
-	1    0    0    -1  
+L Device:R_Small R1
+U 1 1 612FBC65
+P 1700 1800
+F 0 "R1" V 1559 1800 50  0000 C CNN
+F 1 "5.1k" V 1632 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1700 1800 50  0001 C CNN
+F 3 "~" H 1700 1800 50  0001 C CNN
+	1    1700 1800
+	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 6130277F
-P 4250 2750
-F 0 "J3" H 4330 2792 50  0000 L CNN
-F 1 "Conn_01x01" H 4330 2701 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4250 2750 50  0001 C CNN
-F 3 "~" H 4250 2750 50  0001 C CNN
-	1    4250 2750
+L Device:R_Small R0
+U 1 1 612FDB2C
+P 1850 1600
+F 0 "R0" V 1709 1600 50  0000 C CNN
+F 1 "5.1k" V 1782 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1850 1600 50  0001 C CNN
+F 3 "~" H 1850 1600 50  0001 C CNN
+	1    1850 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 1600 2000 1600
+$Comp
+L power:GND #PWR0101
+U 1 1 612FDFD4
+P 2000 1600
+F 0 "#PWR0101" H 2000 1350 50  0001 C CNN
+F 1 "GND" H 2005 1427 50  0000 C CNN
+F 2 "" H 2000 1600 50  0001 C CNN
+F 3 "" H 2000 1600 50  0001 C CNN
+	1    2000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1800 1850 1800
+$Comp
+L power:GND #PWR0102
+U 1 1 612FECCE
+P 1850 1800
+F 0 "#PWR0102" H 1850 1550 50  0001 C CNN
+F 1 "GND" H 1855 1627 50  0000 C CNN
+F 2 "" H 1850 1800 50  0001 C CNN
+F 3 "" H 1850 1800 50  0001 C CNN
+	1    1850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1200 1600 1100
+$Comp
+L power:VCC #PWR0103
+U 1 1 6130057E
+P 1800 1100
+F 0 "#PWR0103" H 1800 950 50  0001 C CNN
+F 1 "VCC" H 1817 1273 50  0000 C CNN
+F 2 "" H 1800 1100 50  0001 C CNN
+F 3 "" H 1800 1100 50  0001 C CNN
+	1    1800 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 2350 2    50   Input ~ 0
+USB_D-
+Text GLabel 1650 2550 2    50   Input ~ 0
+USB_D+
+NoConn ~ 1600 3300
+NoConn ~ 1600 3400
+$Comp
+L power:GND #PWR0104
+U 1 1 61302846
+P 1100 3700
+F 0 "#PWR0104" H 1100 3450 50  0001 C CNN
+F 1 "GND" H 1105 3527 50  0000 C CNN
+F 2 "" H 1100 3700 50  0001 C CNN
+F 3 "" H 1100 3700 50  0001 C CNN
+	1    1100 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 1200 0    50   Input ~ 0
+USB_D-
+Text GLabel 2600 1400 0    50   Input ~ 0
+USB_D+
+$Comp
+L power:GND #PWR0105
+U 1 1 61303839
+P 2600 1600
+F 0 "#PWR0105" H 2600 1350 50  0001 C CNN
+F 1 "GND" H 2605 1427 50  0000 C CNN
+F 2 "" H 2600 1600 50  0001 C CNN
+F 3 "" H 2600 1600 50  0001 C CNN
+	1    2600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 61304716
+P 2600 1000
+F 0 "#PWR0106" H 2600 850 50  0001 C CNN
+F 1 "VCC" H 2617 1173 50  0000 C CNN
+F 2 "" H 2600 1000 50  0001 C CNN
+F 3 "" H 2600 1000 50  0001 C CNN
+	1    2600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1000 2700 1000
+Wire Wire Line
+	2600 1200 2700 1200
+Wire Wire Line
+	2600 1400 2700 1400
+Wire Wire Line
+	2600 1600 2700 1600
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 612FE259
+P 2900 1000
+F 0 "J1" H 2980 1042 50  0000 L CNN
+F 1 "Conn_01x01" H 2980 951 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2900 1000 50  0001 C CNN
+F 3 "~" H 2900 1000 50  0001 C CNN
+	1    2900 1000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J2
 U 1 1 612FF83B
-P 4250 2550
-F 0 "J2" H 4330 2592 50  0000 L CNN
-F 1 "Conn_01x01" H 4330 2501 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4250 2550 50  0001 C CNN
-F 3 "~" H 4250 2550 50  0001 C CNN
-	1    4250 2550
+P 2900 1200
+F 0 "J2" H 2980 1242 50  0000 L CNN
+F 1 "Conn_01x01" H 2980 1151 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2900 1200 50  0001 C CNN
+F 3 "~" H 2900 1200 50  0001 C CNN
+	1    2900 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J1
-U 1 1 612FE259
-P 4250 2350
-F 0 "J1" H 4330 2392 50  0000 L CNN
-F 1 "Conn_01x01" H 4330 2301 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 4250 2350 50  0001 C CNN
-F 3 "~" H 4250 2350 50  0001 C CNN
-	1    4250 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 2950 4050 2950
-Wire Wire Line
-	3950 2750 4050 2750
-Wire Wire Line
-	3950 2550 4050 2550
-Wire Wire Line
-	3950 2350 4050 2350
-$Comp
-L power:VCC #PWR0106
-U 1 1 61304716
-P 3950 2350
-F 0 "#PWR0106" H 3950 2200 50  0001 C CNN
-F 1 "VCC" H 3967 2523 50  0000 C CNN
-F 2 "" H 3950 2350 50  0001 C CNN
-F 3 "" H 3950 2350 50  0001 C CNN
-	1    3950 2350
+L Connector_Generic:Conn_01x01 J3
+U 1 1 6130277F
+P 2900 1400
+F 0 "J3" H 2980 1442 50  0000 L CNN
+F 1 "Conn_01x01" H 2980 1351 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2900 1400 50  0001 C CNN
+F 3 "~" H 2900 1400 50  0001 C CNN
+	1    2900 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
-U 1 1 61303839
-P 3950 2950
-F 0 "#PWR0105" H 3950 2700 50  0001 C CNN
-F 1 "GND" H 3955 2777 50  0000 C CNN
-F 2 "" H 3950 2950 50  0001 C CNN
-F 3 "" H 3950 2950 50  0001 C CNN
-	1    3950 2950
+L Connector_Generic:Conn_01x01 J6
+U 1 1 61302F25
+P 2900 1600
+F 0 "J6" H 2980 1642 50  0000 L CNN
+F 1 "Conn_01x01" H 2980 1551 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2900 1600 50  0001 C CNN
+F 3 "~" H 2900 1600 50  0001 C CNN
+	1    2900 1600
 	1    0    0    -1  
 $EndComp
-Text GLabel 3950 2750 0    50   Input ~ 0
-USB_D+
-Text GLabel 3950 2550 0    50   Input ~ 0
-USB_D-
+Connection ~ 1600 2550
+Connection ~ 1600 2350
+Wire Wire Line
+	1000 3700 1100 3700
+Wire Wire Line
+	900  3700 1000 3700
+Connection ~ 1000 3700
 $Comp
-L power:GND #PWR0104
-U 1 1 61302846
-P 2450 5050
-F 0 "#PWR0104" H 2450 4800 50  0001 C CNN
-F 1 "GND" H 2455 4877 50  0000 C CNN
-F 2 "" H 2450 5050 50  0001 C CNN
-F 3 "" H 2450 5050 50  0001 C CNN
-	1    2450 5050
+L mini_random_library:TYPE-C-31-M12_13_EDITED J0
+U 1 1 612F9EA6
+P 1000 2250
+F 0 "J0" H 1107 3667 50  0000 C CNN
+F 1 "TYPE-C-31-M12_13_EDITED" H 1107 3576 50  0000 C CNN
+F 2 "mini-general-tweaks:HRO-TYPE-C-No-SHIELD" V 500 2300 50  0001 C CNN
+F 3 "" H 1200 2300 50  0001 C CNN
+	1    1000 2250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2950 4750
-NoConn ~ 2950 4650
-Text GLabel 3000 3900 2    50   Input ~ 0
-USB_D+
-Text GLabel 3000 3700 2    50   Input ~ 0
-USB_D-
+Text Notes 550  700  0    87   ~ 17
+USB Type C Receptacle
+Wire Wire Line
+	1600 1600 1750 1600
+Wire Wire Line
+	1600 1100 1800 1100
+Connection ~ 1600 1100
+Text Notes 2250 700  0    87   ~ 17
+Connection Pads
+Wire Notes Line
+	2200 500  2200 1850
+Wire Notes Line
+	2200 1850 3500 1850
+Wire Notes Line
+	3500 1850 3500 500 
+Wire Notes Line
+	3500 500  2200 500 
+Wire Notes Line
+	2200 750  3500 750 
+Wire Notes Line
+	500  500  500  3950
+Wire Notes Line
+	500  3950 2150 3950
+Wire Notes Line
+	2150 3950 2150 500 
+Wire Notes Line
+	500  500  2150 500 
+Wire Notes Line
+	500  750  2150 750 
 $Comp
-L power:VCC #PWR0103
-U 1 1 6130057E
-P 3150 2450
-F 0 "#PWR0103" H 3150 2300 50  0001 C CNN
-F 1 "VCC" H 3167 2623 50  0000 C CNN
-F 2 "" H 3150 2450 50  0001 C CNN
-F 3 "" H 3150 2450 50  0001 C CNN
-	1    3150 2450
+L mini_random_library:OSHW-Text-Logo #G?
+U 1 1 616F35AF
+P 2950 2350
+F 0 "#G?" H 2950 2287 60  0001 C CNN
+F 1 "OSHW-Text-Logo" H 2950 2413 60  0001 C CNN
+F 2 "" H 2950 2350 39  0001 C CNN
+F 3 "" H 2950 2350 39  0001 C CNN
+	1    2950 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 2550 2950 2450
 $Comp
-L power:GND #PWR0102
-U 1 1 612FECCE
-P 3200 3150
-F 0 "#PWR0102" H 3200 2900 50  0001 C CNN
-F 1 "GND" H 3205 2977 50  0000 C CNN
-F 2 "" H 3200 3150 50  0001 C CNN
-F 3 "" H 3200 3150 50  0001 C CNN
-	1    3200 3150
+L Graphic:Logo_Open_Hardware_Small #LOGO?
+U 1 1 616F5139
+P 3500 2400
+F 0 "#LOGO?" H 3500 2675 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 3500 2175 50  0001 C CNN
+F 2 "" H 3500 2400 50  0001 C CNN
+F 3 "~" H 3500 2400 50  0001 C CNN
+	1    3500 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3150 3150 3200 3150
 $Comp
-L power:GND #PWR0101
-U 1 1 612FDFD4
-P 3350 2950
-F 0 "#PWR0101" H 3350 2700 50  0001 C CNN
-F 1 "GND" H 3355 2777 50  0000 C CNN
-F 2 "" H 3350 2950 50  0001 C CNN
-F 3 "" H 3350 2950 50  0001 C CNN
-	1    3350 2950
+L mini_random_library:MiniLogo #G?
+U 1 1 616F6A5E
+P 2900 2200
+F 0 "#G?" H 2900 1917 60  0001 C CNN
+F 1 "MiniLogo" H 2900 2483 60  0001 C CNN
+F 2 "" H 2900 2200 50  0001 C CNN
+F 3 "" H 2900 2200 50  0001 C CNN
+	1    2900 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 2950 3350 2950
-$Comp
-L Device:R_Small R0
-U 1 1 612FDB2C
-P 3200 2950
-F 0 "R0" V 3059 2950 50  0000 C CNN
-F 1 "5.1k" V 3132 2950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3200 2950 50  0001 C CNN
-F 3 "~" H 3200 2950 50  0001 C CNN
-	1    3200 2950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 612FBC65
-P 3050 3150
-F 0 "R1" V 2909 3150 50  0000 C CNN
-F 1 "5.1k" V 2982 3150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3050 3150 50  0001 C CNN
-F 3 "~" H 3050 3150 50  0001 C CNN
-	1    3050 3150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2950 3700 3000 3700
-Wire Wire Line
-	2950 3700 2950 3600
-Wire Wire Line
-	2950 3900 3000 3900
-Wire Wire Line
-	2950 4000 2950 3900
-Text Notes 3550 4000 0    50   ~ 0
-https://github.com/minibois/non-standard-type-c-breakout/
+Text Notes 2200 2570 0    57   ~ 11
+2021
+Text Notes 2200 2500 0    59   ~ 0
+rev.1
 $EndSCHEMATC
